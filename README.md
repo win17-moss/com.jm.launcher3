@@ -5,3 +5,4 @@
 <p>已构建版本不能直接更改软件源，</p>
 <p>请在http://162.14.113.207:8898/jmindex.html 中修改，编辑，添加软件</p>
 <p>和在http://162.14.113.207:8898/api/apps/list.php 中获取软件列表</p>
+<p>https://github.com/win17-moss/com.jm.appstore/issues/2#issue-3246251138 bug提交</p>
