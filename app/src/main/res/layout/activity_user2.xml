@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="#fff2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@+id/titleLayout"
+            android:background="#FF0090FF"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_top_tab_height">
+
+            <TextView
+                android:textSize="18.0sp"
+                android:textColor="#ffffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:text="修改名字"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="30.0dip"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="top|left"
+            android:hint="输入名字"
+            android:background="@color/white"
+            android:inputType="textMultiLine"
+            android:textColor="#ff000000"
+            android:textSize="20.0sp" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="40.0dip"
+                android:layout_marginBottom="20.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/blule_bt_bg"
+                android:backgroundTint="@color/color_2B80D4"
+                android:backgroundTintMode="screen"
+                android:padding="12.0dip"
+                android:text="确定"
+                android:textSize="18.0sp"
+                app:strokeColor="@drawable/blule_bt_bg"
+                app:strokeWidth="?attr/dialogPreferredPadding"/>
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="40.0dip"
+                android:layout_marginBottom="20.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/blule_bt_bg"
+                android:backgroundTint="@color/color_2B80D4"
+                android:backgroundTintMode="screen"
+                android:padding="12.0dip"
+                android:text="取消"
+                android:textSize="18.0sp"
+                app:strokeColor="@drawable/blule_bt_bg"
+                app:strokeWidth="?attr/dialogPreferredPadding"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

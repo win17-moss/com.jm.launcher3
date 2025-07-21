@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_STATE_ENABLED" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_BLUETOOTH" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_CONNECTIVITY" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_MMS" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_PHONE" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_SDCARD" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_USB" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_DEVICE_MANAGER" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_CAPTURE_SCREEN" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_UPDATESTATE_MANAGER" />
+    <uses-permission android:name="com.hihonor.permission.sec.SDK_LAUNCHER" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_APP_MANAGEMENT" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_NETWORK_MANAGER" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_WIFI" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_TELEPHONY" />
+    <uses-permission android:name="com.hihonor.systemmanager.permission.ACCESS_INTERFACE" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_SETTINGS_RESTRICTION" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_KEYGUARD" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_LOCATION" />
+    <uses-permission android:name="com.hihonor.permission.sec.MDM_DEVICE_OWNER" />
+    <uses-permission android:name="com.huawei.permission.sec.SDK_LAUNCHER" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/guard_secure_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/guard_secure_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SimpleDesktop"
+        android:usesCleartextTraffic="true"
+        android:testOnly="false"
+        tools:targetApi="31"
+        tools:node="replace">
+        <activity android:name=".pullnew"
+            android:exported="true"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.jm.launcher3.PULL_NEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ToolsActivity"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+<!--        <activity-->
+<!--            android:name=".MainActivity"-->
+<!--            android:exported="true"-->
+<!--            android:screenOrientation="landscape">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.HOME" />-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.HOME" />-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+
+<!--                <category android:name="android.intent.category.HOME" />-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--            </intent-filter>-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.HOME" />-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing"
+            android:theme="@style/TransparentNavigationBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+                <category
+                    android:name="android.intent.category.HOME" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>
